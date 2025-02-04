@@ -99,9 +99,9 @@ filtered = [item for item in joined if any(sub in item for sub in courses)]
 
 # Print results
 #save in a file
-with open("attendance.txt", "w") as f:
-    for course in filtered:
-        f.write(course + "\n")
+# with open("attendance.txt", "w") as f:
+#     for course in filtered:
+#         f.write(course + "\n")
 
 for course in filtered:
     print(course)
