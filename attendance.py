@@ -13,10 +13,7 @@ soup = BeautifulSoup(response.text, "html.parser")
 logintoken = soup.find("input", {"name": "logintoken"})["value"]
 
 # Step 2: Send login request with token, username, and password
-# username = "2022BCS0048"
-# password = "Chinnu10."
-username = "2022BCS0048"
-password = "Chinnu10."
+
 payload = {"logintoken": logintoken, "username": username, "password": password}
 headers = {
     "Content-Type": "application/x-www-form-urlencoded",
